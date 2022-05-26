@@ -1,0 +1,42 @@
+.footer{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #a5a1df ;
+    margin-top:100px;
+}
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.2rem;
+    margin-right: 2px;
+}
+.footer col{
+    margin:auto;
+    text-align: center;
+}
+.footer h3{
+margin: .8rem 0;
+}
+.footer p{
+    margin:.4rem 0 ;
+}
+.footer .social{
+    text-align: center;
+}
+.footer img{
+    font-size: 2rem;
+    margin:2rem 3rem;
+    color:#5651e5;
+} 
+@media screen and (max-width:940px){
+    .footer .container{
+        grid-template-columns: repeat(2,1fr);
+        gap: .5rem;
+         text-align: center; 
+    }
+    .footer img{
+    margin: 1rem;
+    } 
+    
+}
+

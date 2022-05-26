@@ -1,0 +1,110 @@
+.fearured{
+    margin-top: 9rem;
+    margin: 0 10px 0 10px;
+}
+.featured .featured-text{
+    text-align: center;
+    margin: 1rem 0;
+}
+.featured .container{
+    --gap: 1.2rem;
+    --num-cols:5;
+    --row-height:100;
+    margin-top: 100px;
+
+    padding:1rem;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols),1fr);
+    grid-auto-rows:var(--row-height);
+    gap:var(--gap);
+}
+
+.featured .container .img{
+    /* please not that the width and height for some reasons dont function when placed here hence putting them in their tags is a good idea */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.span-3{
+    grid-column: span 3;
+}
+.span-2{
+    grid-column: span 2;
+}
+.image-grid-row-2{
+    grid-row: span 2 ;
+}
+.info-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+
+}
+.right-img-details .btn{
+    margin: 1rem 0;
+}
+.featured .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.featured .top .price{
+    font-weight: 700;
+    color: green;
+    font-size: 1.5rem;
+}
+.featured .info{
+    display: flex;
+    justify-content: space-between;
+    margin:.8rem 0;
+    width: 60%;
+}
+.featured .bold{
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+
+ @media screen and (max-width: 1024px){
+    .featured .container{
+    --gap: 1.2rem;
+    --num-cols:2;
+    --row-height:100;
+    margin-top: 100px;
+    }
+    .span-3{
+        grid-column: span 2;
+
+    }
+
+    
+    
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
